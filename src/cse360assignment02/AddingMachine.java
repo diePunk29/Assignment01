@@ -96,7 +96,11 @@ public class AddingMachine {
         System.out.println("NEW CALC HISTORY: " + myCalc.toString());
         int result2 = myCalc.getTotal();
         System.out.println("NEW TOTAL: " + result2);
-
+        myCalc.clear();
+        myCalc.add(10000);
+        myCalc.add(250000);
+        myCalc.add(3000000);
+        System.out.println("NEW HISTORY: " + myCalc.toString() + "= " + myCalc.getTotal());
 
     }
 
